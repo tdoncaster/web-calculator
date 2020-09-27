@@ -1,15 +1,24 @@
 <html>  
   <head>
+    <title>Web Calculator</title>
     <script src="script.js"></script>
   </head>
-    <body style="background-color:lightgray">
-      <h1 style="text-align:center;">Web Calculator</h1>
+    <body>
+      <h1 style="text-align:center">Web Calculator</h1>
       <form>
-        <input type= "number" id="a">
-        <span>+</span>
-        <input type= "number" id="b">
-        <input type= "button" value="=" onclick="sum()"/>
-    <span id="answer"></span>
+        <input type="number" id="num1"/>
+        <select id="operator">
+         <option value="+">+</option>
+         <option value="-">-</option>
+         <option value="*">*</option>
+         <option value="/">/</option>
+        <input type="number" id="num2"/>
+        </select>
+
+        <input type="button" value="=" onclick="calculate()" />
+        
+        
+        <span id="answer"></span>
     </form>
     </body>
     
